@@ -24,7 +24,25 @@ img {
 }
 
 
+body {
+    background-color: #F3F4F7;
+}
 
+/* FONTS ------------------------------------------- */
+@font-face {
+  font-family: 'Lucida-Regular';
+    src: url('../fonts/LucidaSansRegular.ttf');
+}
+
+@font-face {
+  font-family: 'Lucida-Bold';
+    src: url('../fonts/LucidaSans-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Lucida-Demibold';
+    src: url('../fonts/lucidasansdemibold.ttf');
+}
 /* Nav ------------------------------------------- */
 /* The Overlay (background) */
 .overlay {
@@ -136,6 +154,7 @@ img {
     border-radius: 20px;
 }
 
+<<<<<<< Updated upstream
 /* Profiler ------------------------------------------- */
 
 .tyveri {
@@ -243,3 +262,57 @@ img {
     }
 }
 /* Profiler ------------------------------------------- */
+=======
+
+/* VECTORS */
+.vector_container {
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.vector_card {
+  background-color: white;
+    height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.vector_icon {
+    height: 70px;
+    background-color: #F3F4F7;
+    border-radius: 60px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.vector_card_h3 {
+    margin-top: 9px;
+    font-size: 25px;
+    color: black;
+    font-family: Lucida-Demibold;
+}
+
+.vector_p {
+    color: black;
+    margin-top: 20px;
+    font-family: Lucida-Regular;
+    font-size: 13px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media (max-width: 920px) {
+    .vector_container {
+        display: flex;
+        flex-direction: column;
+    }
+>>>>>>> Stashed changes
