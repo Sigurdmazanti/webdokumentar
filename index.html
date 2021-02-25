@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
     <title>Grow | EAAA</title>
 </head>
 
@@ -22,7 +23,6 @@
             <a href="#">Clients</a>
             <a href="#">Contact</a>
         </div>
-
     </nav>
 
     <section class="hero">
@@ -32,70 +32,98 @@
             <a href="https://example.com/" class="btn">Go ahead...</a>
         </div>
     </section>
-    <main>
 
-        
-        <div class="vector_container">
-            <div class="vector_card">
-                <img src="img/crowd.svg" class="vector_icon">
-                <h3 class="vector_card_h3">Dan et netværk</h3>
-                <div class="vector_card_p_container">
-                <p class="vector_p">Mød en masse ligesindede iværksættere! Tilmeld dig GROWs facebookgruppe</p>
-                </div>
-            </div>
-            <div class="vector_card">
-                <img src="img/bulb-lighting.svg" class="vector_icon">
-                <h3 class="vector_card_h3">Gør din idé til virkelighed</h3>
-            </div>
-            <div class="vector_card">
-                <img src="img/increase-graph-profit.svg" class="vector_icon">
-                <h3 class="vector_card_h3">Ekspandér din virksomhed</h3>
+    <main>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec nibh molestie, efficitur leo sed,
+            viverra nunc. Donec vehicula accumsan erat facilisis ullamcorper. Donec commodo quis dui nec placerat. Donec
+            mi orci, scelerisque eget nisl ac, hendrerit condimentum odio. Nam dictum odio eget quam tempus, a mattis
+            odio ornare. Nullam auctor libero ut libero suscipit, ut accumsan nunc condimentum. Donec ullamcorper
+            maximus sapien quis egestas.</p>
+
+        <p>Mauris viverra scelerisque lobortis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. Fusce ultrices enim sit amet elit tincidunt maximus. Suspendisse vitae pellentesque lectus.
+            Duis commodo leo suscipit augue mollis, non venenatis dolor ullamcorper. Duis tincidunt scelerisque lacus,
+            vel vehicula leo consectetur vel. Duis posuere nisl non odio consequat ultrices. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.</p>
+
+        <p>Etiam a leo nec mi blandit euismod. Etiam fringilla odio vitae risus ornare, id bibendum velit consequat.
+            Fusce posuere risus sollicitudin condimentum ultrices. Fusce gravida, purus eget laoreet mattis, velit
+            sapien ultrices diam, id dapibus erat leo id quam. Maecenas quis risus convallis, placerat elit non, iaculis
+            tortor. Nullam porttitor magna risus, quis bibendum metus tincidunt in. Etiam vel ligula ac risus mattis
+            tincidunt vel sit amet ante. Morbi et viverra ligula. Ut ac dignissim nisi, condimentum imperdiet mauris.
+            Pellentesque ut ipsum vel diam tristique faucibus eu et lectus. Maecenas posuere neque non lacus bibendum,
+            sit amet pharetra justo semper. Sed mi risus, tempor sit amet ligula eget, varius pretium est. Sed a odio in
+            orci accumsan pretium suscipit ut quam.</p>
+    </main>
+
+    <!-- Video player -->
+    <section id="wrapper">
+        <div id='player_wrapper'>
+            <video id='video_player'>
+                <source src='img/two.mp4' type='video/mp4'>
+            </video>
+            <div id='player_controls'>
+                <input type="image" src="img/play_icon.png" onclick="play_vid()" id="play_button">
+                <input type="image" src="img/pause_icon.png" onclick="pause_vid()" id="pause_button">
+                <input type="image" src="img/stop_icon.png" onclick="stop_vid()" id="stop_button">
+                <img src="img/sound_icon.png" id="vol_img">
+                <input class="slider" type="range" id="change_vol" onchange="change_vol()" step="0.05" min="0" max="1"
+                    value="1">
             </div>
         </div>
-    </main>
-            <section class="tyveri">
-            <div class="tyveri-heading">
-                <h2 id="tyveri">Undgå cykeltyven</h2>
-                <p>Her er 3 simple tips for at du bedre kan undgå at din cykel bliver stjålet</p>
+    </section>
+    <!-- Video player Slut -->
+
+    <section class="tyveri">
+        <div class="tyveri-heading">
+            <h2 id="tyveri">Undgå cykeltyven</h2>
+            <p>Her er 3 simple tips for at du bedre kan undgå at din cykel bliver stjålet</p>
+        </div>
+
+        <div class="tyveri-box-container">
+            <div class="tyveri-box">
+                <div class="bar"></div>
+                <img alt="Ikon af lås med flueben" src="img/l%C3%A5s.svg" />
+                <h3>forsikringsgodkendt cykellås</h3>
+                <p>Når du skal kigge på cykellås til din cykel er det en utrolig vigtig ting at den er forsikrings-
+                    godkendt, dette betyder at det er muligt at kræve erstatning hvis man nu skulle risikere at få sin
+                    cykel stjålet.</p>
+                <form method="get" action="https://www.jensencykler.com/6461-ringlaas-mnoegle">
+                    <button class="card_button">Læs mere</button>
+                </form>
             </div>
 
-            <div class="tyveri-box-container">
-                <div class="tyveri-box">
-                    <div class="bar"></div>
-                    <img alt="Ikon af lås med flueben" src="img/l%C3%A5s.svg" />
-                    <h3>forsikringsgodkendt cykellås</h3>
-                    <p>Når du skal kigge på cykellås til din cykel er det en utrolig vigtig ting at den er forsikrings- godkendt, dette betyder at det er muligt at kræve erstatning hvis man nu skulle risikere at få sin cykel stjålet.</p>
-                    <form method="get" action="https://www.jensencykler.com/6461-ringlaas-mnoegle">
-                        <button class="card_button">Læs mere</button>
-                    </form>
-                </div>
-
-                <div class="tyveri-box">
-                    <div class="bar"></div>
-                    <img alt="lokalitionsikon" src="img/lokation.svg" />
-                    <h3>Lokation</h3>
-                    <p>Tænkt over hvor du stiller din cykel og lås den altid, om du så bare er væk i 2 minutter. Hvis det er muligt så stil den i et aflåst rum eller skur. Parkerer du ved en station eller stoppested så lås den gerne fast til evt. cykelstativ eller lignende.</p>
-                    <form method="get" action="https://dkr.dk/tyveri/cykeltyveri/">
-                        <button class="card_button">Læs mere</button>
-                    </form>
-                </div>
-
-
-                <div class="tyveri-box">
-                    <div class="bar"></div>
-                    <img alt="Ikon af en tyv" src="img/tyv.svg" />
-                    <h3>Frist ikke tyven</h3>
-                    <p>Frist ikke tyven og sørg altid for at du tager løse genstande med dig. Lad ikke cykelhjelm, cykellygter, drikkedunk og andet ekstraudstyr blive på cyklen. Stil gerne cyklen fremme i offentligheden frem for en mørk baggård.</p>
-                    <form method="get" action="https://dkr.dk/tyveri/cykeltyveri/">
-                        <button class="card_button">Læs mere</button>
-                    </form>
-                </div>
+            <div class="tyveri-box">
+                <div class="bar"></div>
+                <img alt="lokalitionsikon" src="img/lokation.svg" />
+                <h3>Lokation</h3>
+                <p>Tænkt over hvor du stiller din cykel og lås den altid, om du så bare er væk i 2 minutter. Hvis det er
+                    muligt så stil den i et aflåst rum eller skur. Parkerer du ved en station eller stoppested så lås
+                    den gerne fast til evt. cykelstativ eller lignende.</p>
+                <form method="get" action="https://dkr.dk/tyveri/cykeltyveri/">
+                    <button class="card_button">Læs mere</button>
+                </form>
             </div>
-        </section>
 
+
+            <div class="tyveri-box">
+                <div class="bar"></div>
+                <img alt="Ikon af en tyv" src="img/tyv.svg" />
+                <h3>Frist ikke tyven</h3>
+                <p>Frist ikke tyven og sørg altid for at du tager løse genstande med dig. Lad ikke cykelhjelm,
+                    cykellygter, drikkedunk og andet ekstraudstyr blive på cyklen. Stil gerne cyklen fremme i
+                    offentligheden frem for en mørk baggård.</p>
+                <form method="get" action="https://dkr.dk/tyveri/cykeltyveri/">
+                    <button class="card_button">Læs mere</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <!-- Use any element to open/show the overlay navigation menu -->
     <span onclick="openNav()">open</span>
 
     <script src="/js/js.js"></script>
-</body></html>
+</body>
+
+</html>
