@@ -24,9 +24,53 @@ img {
 }
 
 
+/* Global ---------------------------------------- */
+.default-button {
+    background-color: #71d3f1;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-family: 'inter';
+    color: white;
+    text-transform: uppercase;
+    transition-duration: 0.5s;
+    height: 40px;
+    width: 180px;
+    margin-top: 10px;
+}
+
+.default-button:hover {
+    width: 200px;
+}
+
+.default-button-inverted {
+    background-color: #222222;
+    border: 2px solid #71f3d1;
+    border-radius: 100px;
+    cursor: pointer;
+    font-family: 'inter';
+    color: white;
+    text-transform: uppercase;
+    transition-duration: 0.5s;
+    height: 40px;
+    width: 180px;
+    margin-top: 10px;
+}
+
+.default-button-inverted:hover {
+    width: 200px;
+}
 
 /* Nav ------------------------------------------- */
 /* The Overlay (background) */
+#menu-button {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 90vh;
+    text-shadow: black 1px 1px 10px;
+}
+
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */   
   height: 100%;
@@ -95,6 +139,7 @@ img {
     align-items: center;
     
     /* Text styles */
+    font-family: 'Lucida Sans' sans-serif;
     text-align: center;
     color: white; /* ADD THIS LINE */
     
@@ -113,27 +158,9 @@ img {
     /* Margins */
     margin-top: 0;
     margin-bottom: 0.5em;
-}
-
-.hero .btn {
-    /* Positioning and sizing */
-    display: block;
-    width: 200px;
     
-    /* Padding and margins */
-    padding: 1em;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    
-    /* Text styles */
-    color: white; /* CHANGE THIS LINE */
-    text-decoration: none;
-    font-size: 1.5em;
-    
-    /* Border styles */
-    border: 3px solid white; /* CHANGE THIS LINE */
-    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
 }
 
 /* tekst + billeder sektion ---------------------- */

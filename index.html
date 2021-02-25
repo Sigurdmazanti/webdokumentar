@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <title>Grow | EAAA</title>
@@ -26,34 +27,37 @@
     </nav>
 
     <section class="hero">
+        <span id="menu-button" onclick="openNav()"><i class="fa fa-bars fa_custom fa-4x"></i></span>
         <div class="hero-inner">
-            <h1>My awesome website</h1>
-            <h2>Look at this website and bask in its amazing glory!</h2>
-            <a href="https://example.com/" class="btn">Go ahead...</a>
+            <h1>GROW</h1>
+            <h2>Er du en grower, eller er du en shower</h2>
+            <form class="#" method="get" action="https::/www.google.dk">
+                <button type="submit" class="default-button">Læs mere</button>
+            </form>
         </div>
     </section>
 
-	<!-- tekst til venstre - billeder til højre -->
-	<section class="sektionstekst-og-billeder">
-		
-		<div class="sektionstekst-billeder_container">
-			<div class="sektionstekst_box">
-				<p>En sektion med tekst omkring GROW, som står ved siden af nogle billeder af GROW lokalerne og bygningen.</p>
-			</div>
-		</div>
-		
-		<div class="sektionstekst-billeder_container">
-			<div class="sektionsbilleder_box">
-				<img alt="billede af GROWs lokale" src="img/obamaSquare.jpg">
-				<img alt="billede af GROWs lokale" src="img/bubberSquare.jpg">
-				<img alt="billede af GROWs bygning" src="img/AminSquare.jpg">
-				<img alt="billede af GROWs bygning" src="img/pope.jpg">
-			</div>
-		</div>
-	
-	</section>
-	<!-- tekst til venstre - billeder til højre slut -->
-	
+    <!-- tekst til venstre - billeder til højre -->
+    <section class="sektionstekst-og-billeder">
+
+        <div class="sektionstekst-billeder_container">
+            <div class="sektionstekst_box">
+                <p>En sektion med tekst omkring GROW, som står ved siden af nogle billeder af GROW lokalerne og bygningen.</p>
+            </div>
+        </div>
+
+        <div class="sektionstekst-billeder_container">
+            <div class="sektionsbilleder_box">
+                <img alt="billede af GROWs lokale" src="img/obamaSquare.jpg">
+                <img alt="billede af GROWs lokale" src="img/bubberSquare.jpg">
+                <img alt="billede af GROWs bygning" src="img/AminSquare.jpg">
+                <img alt="billede af GROWs bygning" src="img/pope.jpg">
+            </div>
+        </div>
+
+    </section>
+    <!-- tekst til venstre - billeder til højre slut -->
+
     <main>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec nibh molestie, efficitur leo sed,
             viverra nunc. Donec vehicula accumsan erat facilisis ullamcorper. Donec commodo quis dui nec placerat. Donec
@@ -88,50 +92,45 @@
                 <input type="image" src="img/pause_icon.png" onclick="pause_vid()" id="pause_button">
                 <input type="image" src="img/stop_icon.png" onclick="stop_vid()" id="stop_button">
                 <img src="img/sound_icon.png" id="vol_img">
-                <input class="slider" type="range" id="change_vol" onchange="change_vol()" step="0.05" min="0" max="1"
-                    value="1">
+                <input class="slider" type="range" id="change_vol" onchange="change_vol()" step="0.05" min="0" max="1" value="1">
             </div>
         </div>
     </section>
     <!-- Video player Slut -->
 
-	<!-- Brugerprofiler -->
+    <!-- Brugerprofiler -->
     <section class="brugerprofiler">
-            <div class="brugerprofil_titel">
-                <h2 id="brugerprofil_overskrift">Mød vores brugerprofiler</h2>
-                <p>Her er 3 af vores succeshistorier igennem tidligere medlemmer af GROW.</p>
+        <div class="brugerprofil_titel">
+            <h2 id="brugerprofil_overskrift">Mød vores brugerprofiler</h2>
+            <p>Her er 3 af vores succeshistorier igennem tidligere medlemmer af GROW.</p>
+        </div>
+
+        <div class="brugerprofil_bruger_container">
+            <div class="brugerprofil_bruger">
+                <div class="brugerprofil_bruger_bar"></div>
+                <img alt="Billede af brugerprofil Amin" src="img/AminSquare.jpg">
+                <h3><b>Amin</b><br>Musiker/komiker</h3>
+                <p>Skal der sjov i musikken, så har Amin replikken.<br>-<br>Amin Jensen er en af de store danske iværksættere, som er kommet ud af GROW. En sand pioner.</p>
             </div>
 
-            <div class="brugerprofil_bruger_container">
-                <div class="brugerprofil_bruger">
-                    <div class="brugerprofil_bruger_bar"></div>
-                    <img alt="Billede af brugerprofil Amin" src="img/AminSquare.jpg">
-                    <h3><b>Amin</b><br>Musiker/komiker</h3>
-                    <p>Skal der sjov i musikken, så har Amin replikken.<br>-<br>Amin Jensen er en af de store danske iværksættere, som er kommet ud af GROW. En sand pioner.</p>
-                </div>
-
-                <div class="brugerprofil_bruger">
-                    <div class="brugerprofil_bruger_bar"></div>
-                    <img alt="Billede af brugerprofil Francis" src="img/pope.jpg">
-                    <h3><b>Francis</b><br>Leder af Vatikanet</h3>
-                    <p>Paven er Paven - behøver vi at sige mere?<br>-<br>Francis - bedre kendt som Pope Francis er verdenskendt. Men vidste du godt, at han var iværksætter hos GROW?</p>
-                </div>
-
-
-                <div class="brugerprofil_bruger">
-                    <div class="brugerprofil_bruger_bar"></div>
-                    <img alt="Billede af brugerprofil Bubber" src="img/bubberSquare.jpg">
-                    <h3><b>Bubber</b><br>Influencer</h3>
-                    <p>Alle elsker Bubber, og Bubber elsker alle.<br>-<br>Bubber er danskernes Kardashien, og han lever livet i rampelyset - alt sammen takket være GROW.</p>
-                </div>
+            <div class="brugerprofil_bruger">
+                <div class="brugerprofil_bruger_bar"></div>
+                <img alt="Billede af brugerprofil Francis" src="img/pope.jpg">
+                <h3><b>Francis</b><br>Leder af Vatikanet</h3>
+                <p>Paven er Paven - behøver vi at sige mere?<br>-<br>Francis - bedre kendt som Pope Francis er verdenskendt. Men vidste du godt, at han var iværksætter hos GROW?</p>
             </div>
-        </section>
-	<!-- Brugerprofiler slut -->
+
+
+            <div class="brugerprofil_bruger">
+                <div class="brugerprofil_bruger_bar"></div>
+                <img alt="Billede af brugerprofil Bubber" src="img/bubberSquare.jpg">
+                <h3><b>Bubber</b><br>Influencer</h3>
+                <p>Alle elsker Bubber, og Bubber elsker alle.<br>-<br>Bubber er danskernes Kardashien, og han lever livet i rampelyset - alt sammen takket være GROW.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Brugerprofiler slut -->
 
     <!-- Use any element to open/show the overlay navigation menu -->
-    <span onclick="openNav()">open</span>
-
     <script src="/js/js.js"></script>
-</body>
-
-</html>
+</body></html>
