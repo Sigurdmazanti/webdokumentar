@@ -136,9 +136,31 @@ img {
     border-radius: 20px;
 }
 
+/* tekst + billeder sektion ---------------------- */
+.sektionstekst-og-billeder {
+	width: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sektionstekst-billeder_container {
+	width: 50%;
+	padding: 10px;
+}
+
+.sektionsbilleder_box img {
+	margin: 5px;
+	width: 35%;
+}
+
+.sektionsbilleder_box img:hover {
+	width: 45%;
+}
+
 /* Profiler ------------------------------------------- */
 
-.tyveri {
+.brugerprofiler {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -148,16 +170,16 @@ img {
     font-family: 'inter', sans-serif;
 }
 
-.tyveri a {
+.brugerprofiler a {
     text-decoration: none;
     color: #ffffff;
 }
 
-.tyveri-heading {
+.brugerprofil_titel {
     text-align: center;
 }
 
-.tyveri-heading h2 {
+.brugerprofil_titel h2 {
     color: #71d3f1;
     font-size: 32px;
     font-weight: 400;
@@ -166,21 +188,21 @@ img {
     text-transform: uppercase;
 }
 
-.tyveri-heading p {
+.brugerprofil_titel p {
     color: rgba(87, 105, 117, 0.60);
     font-size: 1rem;
     margin: 5px;
     text-align: center;
 }
 
-.tyveri-box-container {
+.brugerprofil_bruger_container {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.tyveri-box {
+.brugerprofil_bruger {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -194,11 +216,12 @@ img {
     position: relative;
 }
 
-.tyveri-box img {
-    height: 75px;
+.brugerprofil_bruger img {
+    height: 100px;
+	border-radius: 60px;
 }
 
-.tyveri-box h3 {
+.brugerprofil_bruger h3 {
     color: #000000;
     letter-spacing: 1px;
     margin-bottom: 8px;
@@ -206,12 +229,12 @@ img {
 
 }
 
-.tyveri-box p {
+.brugerprofil_bruger p {
     color: rgba(87, 105, 117, 0.90);
     text-align: center;
 }
 
-.bar {
+.brugerprofil_bruger_bar {
     width: 100px;
     height: 6px;
     position: absolute;
@@ -224,12 +247,12 @@ img {
     animation: bar 0.5s;
 }
 
-.tyveri-box:hover {
+.brugerprofil_bruger:hover {
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.08);
     transition: all ease 0.3s;
 }
 
-.tyveri-box:hover .bar {
+.brugerprofil_bruger:hover .brugerprofil_bruger_bar {
     display: block;
 }
 

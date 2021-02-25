@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <title>Grow | EAAA</title>
 </head>
@@ -33,6 +33,27 @@
         </div>
     </section>
 
+	<!-- tekst til venstre - billeder til højre -->
+	<section class="sektionstekst-og-billeder">
+		
+		<div class="sektionstekst-billeder_container">
+			<div class="sektionstekst_box">
+				<p>En sektion med tekst omkring GROW, som står ved siden af nogle billeder af GROW lokalerne og bygningen.</p>
+			</div>
+		</div>
+		
+		<div class="sektionstekst-billeder_container">
+			<div class="sektionsbilleder_box">
+				<img alt="billede af GROWs lokale" src="img/obamaSquare.jpg">
+				<img alt="billede af GROWs lokale" src="img/bubberSquare.jpg">
+				<img alt="billede af GROWs bygning" src="img/AminSquare.jpg">
+				<img alt="billede af GROWs bygning" src="img/pope.jpg">
+			</div>
+		</div>
+	
+	</section>
+	<!-- tekst til venstre - billeder til højre slut -->
+	
     <main>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec nibh molestie, efficitur leo sed,
             viverra nunc. Donec vehicula accumsan erat facilisis ullamcorper. Donec commodo quis dui nec placerat. Donec
@@ -58,11 +79,11 @@
 
     <!-- Video player -->
     <section id="wrapper">
-        <div id='player_wrapper'>
-            <video id='video_player'>
-                <source src='img/two.mp4' type='video/mp4'>
+        <div id="player_wrapper">
+            <video id="video_player">
+                <source src="img/two.mp4" type="video/mp4">
             </video>
-            <div id='player_controls'>
+            <div id="player_controls">
                 <input type="image" src="img/play_icon.png" onclick="play_vid()" id="play_button">
                 <input type="image" src="img/pause_icon.png" onclick="pause_vid()" id="pause_button">
                 <input type="image" src="img/stop_icon.png" onclick="stop_vid()" id="stop_button">
@@ -74,51 +95,38 @@
     </section>
     <!-- Video player Slut -->
 
-    <section class="tyveri">
-        <div class="tyveri-heading">
-            <h2 id="tyveri">Undgå cykeltyven</h2>
-            <p>Her er 3 simple tips for at du bedre kan undgå at din cykel bliver stjålet</p>
-        </div>
-
-        <div class="tyveri-box-container">
-            <div class="tyveri-box">
-                <div class="bar"></div>
-                <img alt="Ikon af lås med flueben" src="img/l%C3%A5s.svg" />
-                <h3>forsikringsgodkendt cykellås</h3>
-                <p>Når du skal kigge på cykellås til din cykel er det en utrolig vigtig ting at den er forsikrings-
-                    godkendt, dette betyder at det er muligt at kræve erstatning hvis man nu skulle risikere at få sin
-                    cykel stjålet.</p>
-                <form method="get" action="https://www.jensencykler.com/6461-ringlaas-mnoegle">
-                    <button class="card_button">Læs mere</button>
-                </form>
+	<!-- Brugerprofiler -->
+    <section class="brugerprofiler">
+            <div class="brugerprofil_titel">
+                <h2 id="brugerprofil_overskrift">Mød vores brugerprofiler</h2>
+                <p>Her er 3 af vores succeshistorier igennem tidligere medlemmer af GROW.</p>
             </div>
 
-            <div class="tyveri-box">
-                <div class="bar"></div>
-                <img alt="lokalitionsikon" src="img/lokation.svg" />
-                <h3>Lokation</h3>
-                <p>Tænkt over hvor du stiller din cykel og lås den altid, om du så bare er væk i 2 minutter. Hvis det er
-                    muligt så stil den i et aflåst rum eller skur. Parkerer du ved en station eller stoppested så lås
-                    den gerne fast til evt. cykelstativ eller lignende.</p>
-                <form method="get" action="https://dkr.dk/tyveri/cykeltyveri/">
-                    <button class="card_button">Læs mere</button>
-                </form>
-            </div>
+            <div class="brugerprofil_bruger_container">
+                <div class="brugerprofil_bruger">
+                    <div class="brugerprofil_bruger_bar"></div>
+                    <img alt="Billede af brugerprofil Amin" src="img/AminSquare.jpg">
+                    <h3><b>Amin</b><br>Musiker/komiker</h3>
+                    <p>Skal der sjov i musikken, så har Amin replikken.<br>-<br>Amin Jensen er en af de store danske iværksættere, som er kommet ud af GROW. En sand pioner.</p>
+                </div>
+
+                <div class="brugerprofil_bruger">
+                    <div class="brugerprofil_bruger_bar"></div>
+                    <img alt="Billede af brugerprofil Francis" src="img/pope.jpg">
+                    <h3><b>Francis</b><br>Leder af Vatikanet</h3>
+                    <p>Paven er Paven - behøver vi at sige mere?<br>-<br>Francis - bedre kendt som Pope Francis er verdenskendt. Men vidste du godt, at han var iværksætter hos GROW?</p>
+                </div>
 
 
-            <div class="tyveri-box">
-                <div class="bar"></div>
-                <img alt="Ikon af en tyv" src="img/tyv.svg" />
-                <h3>Frist ikke tyven</h3>
-                <p>Frist ikke tyven og sørg altid for at du tager løse genstande med dig. Lad ikke cykelhjelm,
-                    cykellygter, drikkedunk og andet ekstraudstyr blive på cyklen. Stil gerne cyklen fremme i
-                    offentligheden frem for en mørk baggård.</p>
-                <form method="get" action="https://dkr.dk/tyveri/cykeltyveri/">
-                    <button class="card_button">Læs mere</button>
-                </form>
+                <div class="brugerprofil_bruger">
+                    <div class="brugerprofil_bruger_bar"></div>
+                    <img alt="Billede af brugerprofil Bubber" src="img/bubberSquare.jpg">
+                    <h3><b>Bubber</b><br>Influencer</h3>
+                    <p>Alle elsker Bubber, og Bubber elsker alle.<br>-<br>Bubber er danskernes Kardashien, og han lever livet i rampelyset - alt sammen takket være GROW.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+	<!-- Brugerprofiler slut -->
 
     <!-- Use any element to open/show the overlay navigation menu -->
     <span onclick="openNav()">open</span>
