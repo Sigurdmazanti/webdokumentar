@@ -71,10 +71,9 @@ img {
     margin-top: 10px;
 }
 
-<<<<<<< Updated upstream
 .default-button-inverted:hover {
     width: 200px;
-=======
+}
 /* FONTS ------------------------------------------- */
 @font-face {
   font-family: 'Lucida-Regular';
@@ -84,7 +83,6 @@ img {
 @font-face {
   font-family: 'Lucida-Bold';
     src: url('../fonts/LucidaSans-Bold.otf');
->>>>>>> Stashed changes
 }
 
 @font-face {
