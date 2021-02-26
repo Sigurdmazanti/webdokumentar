@@ -651,45 +651,16 @@ img {
 footer {
     text-align: center;
 }
-.h3_footer {
-    font-family: Lucida-Demibold;
-    font-size: 30px;
-    text-transform: uppercase;
+
+.footer_billede {
+    background-image: url(../img/GROW%20banner.PNG);
+        background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
-.footer_p {
-    text-align: left;
-    line-height: 20px;
-    margin-top: 15px;
-    margin-left: 400px;
-    margin-right: 400px;
-    font-family: Lucida-Regular;
-    font-size: 13px;
-}
-
-.footer_button {
-    margin-top: 50px;
-    font-family: Lucida-Demibold;
-    height: 40px;
-    width: 100px;
-    border-radius: 50px;
-    border-style: none;
-    background-color: black;
-    color: white;
-}
-
-.some_container {
-    display: flex;
-    justify-content: center;
-}
-
-.some_ikon {
-    width: 30px;
-    height: 30px;
-=======
-/* FOOTER */
-footer {
-  text-align: center;
+.footer_tekst {
+    
 }
 .h3_footer {
   font-family: Lucida-Demibold;
@@ -701,12 +672,14 @@ footer {
   text-align: left;
   line-height: 20px;
   margin-top: 15px;
-  margin-left: 400px;
-  margin-right: 400px;
   font-family: Lucida-Regular;
   font-size: 13px;
+    margin-bottom: 10px;
 }
 
+.bund {
+    margin-bottom: 500px;
+}
 .footer_button {
   margin-top: 50px;
   font-family: Lucida-Demibold;
@@ -723,8 +696,12 @@ footer {
   justify-content: center;
 }
 
+.some_container > .some_ikon {
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
 .some_ikon {
   width: 30px;
   height: 30px;
->>>>>>> Stashed changes
 }
+
