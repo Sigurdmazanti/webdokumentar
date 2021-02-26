@@ -1,43 +1,56 @@
 /* CSS RESET ------------------------------------------- */
 html {
-  box-sizing: border-box;
-  font-size: 16px;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
 }
 
-ol, ul {
-  list-style: none;
+ol,
+ul {
+    list-style: none;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 /* FONTS ------------------------------------------- */
 @font-face {
-  font-family: 'Lucida-Regular';
+    font-family: 'Lucida-Regular';
     src: url('../fonts/LucidaSansRegular.ttf');
 }
 
 @font-face {
-  font-family: 'Lucida-Bold';
+    font-family: 'Lucida-Bold';
     src: url('../fonts/LucidaSans-Bold.otf');
 }
 
 @font-face {
-  font-family: 'Lucida-Demibold';
+    font-family: 'Lucida-Demibold';
     src: url('../fonts/lucidasansdemibold.ttf');
 }
+
 /* Global ---------------------------------------- */
 .default-button {
     background-color: #71d3f1;
@@ -74,21 +87,23 @@ img {
 .default-button-inverted:hover {
     width: 200px;
 }
+
 /* FONTS ------------------------------------------- */
 @font-face {
-  font-family: 'Lucida-Regular';
+    font-family: 'Lucida-Regular';
     src: url('../fonts/LucidaSansRegular.ttf');
 }
 
 @font-face {
-  font-family: 'Lucida-Bold';
+    font-family: 'Lucida-Bold';
     src: url('../fonts/LucidaSans-Bold.otf');
 }
 
 @font-face {
-  font-family: 'Lucida-Demibold';
+    font-family: 'Lucida-Demibold';
     src: url('../fonts/lucidasansdemibold.ttf');
 }
+
 /* Nav ------------------------------------------- */
 /* The Overlay (background) */
 #menu-button {
@@ -100,59 +115,75 @@ img {
 }
 
 .overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-  height: 100%;
-  width: 0;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  background-color: rgb(0,0,0); /* Black fallback color */
-  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    /* Black fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
 /* Position the content inside the overlay */
 .overlay-content {
-  position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    position: relative;
+    top: 25%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
 /* The navigation links inside the overlay */
 .overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
 }
 
 /* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
 }
 
 /* Position the close button (top right corner) */
 .overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
 }
 
 /* HERO ------------------------------------------- */
@@ -160,17 +191,18 @@ img {
     /* Sizing */
     width: 100vw;
     height: 100vh;
-    
+
     /* Flexbox stuff */
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     /* Text styles */
-    font-family: 'Lucida Sans' sans-serif;
+    font-family: 'Lucida Sans'sans-serif;
     text-align: center;
-    color: white; /* ADD THIS LINE */
-    
+    color: white;
+    /* ADD THIS LINE */
+
     /* Background styles */
     background-image: url('/img/pexels-marc-mueller-380769.jpg');
     background-size: cover;
@@ -182,124 +214,124 @@ img {
 .hero h1 {
     /* Text styles */
     font-size: 5em;
-    
+
     /* Margins */
     margin-top: 0;
     margin-bottom: 0.5em;
-    
+
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 3px;
 }
 
 /* tekst + billeder sektion ---------------------- */
 .sektionstekst-og-billeder {
-	background-color: #83AFB4;
-	width: 100%;
-	display: flex;
+    background-color: #83AFB4;
+    width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .sektionstekst-billeder_container {
-	width: 50%;
+    width: 50%;
 }
 
 .sektionstekst_box {
-	background-color: white;
-	margin-left: 20px;
-	margin-right: 20px;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .sektionsbilleder_box {
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-	justify-content: center;
-	padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
 }
 
 .sektionsbilleder_box img {
-	margin: 5px;
-	width: 35%;
-	height: 35%;
-	opacity: 0.8;
+    margin: 5px;
+    width: 35%;
+    height: 35%;
+    opacity: 0.8;
 }
 
 .sektionsbilleder_box img:hover {
-	opacity: 1;
+    opacity: 1;
 }
 
-@media (max-width: 700px){
-	.sektionstekst-og-billeder {
-		display: flex;
-		flex-direction: column;
-	}
-	
-	.sektionstekst-billeder_container {
-		width: 100%;
-	}
-	
-	.sektionstekst_box {
-		margin-top: 20px;
-	}
-	
-	.sektionsbilleder_box img {
-		width: 40%;
-	}
+@media (max-width: 700px) {
+    .sektionstekst-og-billeder {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sektionstekst-billeder_container {
+        width: 100%;
+    }
+
+    .sektionstekst_box {
+        margin-top: 20px;
+    }
+
+    .sektionsbilleder_box img {
+        width: 40%;
+    }
 }
 
 
 /* VECTORS */
 .vector_container {
-  display: grid;
-  grid-gap: 100px;
-  grid-template-columns: 300px 300px 300px;
-  justify-content: center;
-  align-items: center;
-  margin: 50px;
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
 }
 
 .vector_card {
-background-color: white;
-  height: 500px;
-display: flex;
-flex-direction: column;
-align-items: center;
-  text-align: center;
-box-shadow: rgba(0, 0, 0, 0.7);
-color: white;
+    background-color: white;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.7);
+    color: white;
 }
 
 .vector_icon {
-  height: 70px;
-  background-color: #F3F4F7;
-  border-radius: 60px;
-  padding: 5px;
-  margin-top: 10px;
+    height: 70px;
+    background-color: #F3F4F7;
+    border-radius: 60px;
+    padding: 5px;
+    margin-top: 10px;
 }
 
 .vector_card_h3 {
-  margin-top: 9px;
-  font-size: 25px;
-  color: black;
-  font-family: Lucida-Demibold;
+    margin-top: 9px;
+    font-size: 25px;
+    color: black;
+    font-family: Lucida-Demibold;
 }
 
 .vector_p {
-  color: black;
-  margin-top: 20px;
-  font-family: Lucida-Regular;
-  font-size: 13px;
-  text-align: left;
-  margin-left: 20px;
-  margin-right: 20px;
+    color: black;
+    margin-top: 20px;
+    font-family: Lucida-Regular;
+    font-size: 13px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 @media (max-width: 920px) {
-  .vector_container {
-      display: flex;
-      flex-direction: column;
-  }
+    .vector_container {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* Profiler ------------------------------------------- */
@@ -362,7 +394,7 @@ color: white;
 
 .brugerprofil_bruger img {
     height: 100px;
-	border-radius: 60px;
+    border-radius: 60px;
 }
 
 .brugerprofil_bruger h3 {
@@ -409,73 +441,79 @@ color: white;
         width: 100px;
     }
 }
+
 /* slut på Profiler ------------------------------------------- */
 
 /* Videoplayer med tekst til højre -------- */
 .video-og-tekst {
-	background-color: #83AFB4;
-	display: flex;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-.video1_wrapper {
-	width: 50%;
-}
-.videotekst {
-	color: white;
-	width: 50%;
-	margin: auto;
-	padding: 20px;
-	
-}
-#video_player
-{
-	width: 95%;
-	display: block;
-	margin-top: 20px;
-	margin-right: auto;
-	margin-left: auto;
-}
-#player_controls
-{
-	width: 95%;
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 20px;
- background-color:black;
- padding:5px;
- box-sizing:border-box;
-}
-input[type="image"]
-{
- float:left;
- width: 8%;
-  
-}
-#vol_img
-{
- width: 7%;
+    background-color: #83AFB4;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.slider{
-	width: 50%;
+.video1_wrapper {
+    width: 50%;
+}
+
+.videotekst {
+    color: white;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+
+}
+
+#video_player {
+    width: 95%;
+    display: block;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#player_controls {
+    width: 95%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    background-color: black;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+input[type="image"] {
+    float: left;
+    width: 8%;
+
+}
+
+#vol_img {
+    width: 7%;
+}
+
+.slider {
+    width: 50%;
 }
 
 @media (max-width: 700px) {
-	.video-og-tekst {
-		flex-direction: column;
-	}
-	.video1_wrapper {
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.videotekst {
-		width: 100%;
-		padding-top: 0px;
+    .video-og-tekst {
+        flex-direction: column;
+    }
+
+    .video1_wrapper {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .videotekst {
+        width: 100%;
+        padding-top: 0px;
+    }
 }
-}
+
 /* slut på videosektion -------- */
 
 
@@ -605,14 +643,14 @@ img {
 }
 
 .vector_card {
-  background-color: white;
+    background-color: white;
     height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.7);
-  color: white;
+    box-shadow: rgba(0, 0, 0, 0.7);
+    color: white;
 }
 
 .vector_icon {
@@ -652,56 +690,78 @@ footer {
     text-align: center;
 }
 
+/*
 .footer_billede {
     background-image: url(../img/GROW%20banner.PNG);
-        background-size: cover;
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
-
-.footer_tekst {
-    
+*/
+.footer_tekst_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
 }
+
 .h3_footer {
-  font-family: Lucida-Demibold;
-  font-size: 30px;
-  text-transform: uppercase;
+    font-family: Lucida-Demibold;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .footer_p {
-  text-align: left;
-  line-height: 20px;
-  margin-top: 15px;
-  font-family: Lucida-Regular;
-  font-size: 13px;
-    margin-bottom: 10px;
+    display: inline-block;
+    text-align: justify;
+    line-height: 20px;
+    margin-top: 15px;
+    font-family: Lucida-Regular;
+    font-size: 13px;
+    max-width: 50%;
 }
 
-.bund {
-    margin-bottom: 500px;
+.footer_billede {
+    position: absolute;
+    text-align: center;
 }
+
 .footer_button {
-  margin-top: 50px;
-  font-family: Lucida-Demibold;
-  height: 40px;
-  width: 100px;
-  border-radius: 50px;
-  border-style: none;
-  background-color: black;
-  color: white;
+    margin-top: 50px;
+    font-family: Lucida-Demibold;
+    height: 40px;
+    width: 100px;
+    border-radius: 50px;
+    border-style: none;
+    background-color: black;
+    color: white;
 }
 
+
+.growban {
+    border-bottom: #83afb4 30px solid;
+}
 .some_container {
-  display: flex;
-  justify-content: center;
+    display: inline-flex;
+    justify-content: center;
+      position: absolute;
+  top: 95%;
+  left: 50%;
+    width: 100%;
+  transform: translate(-50%, -50%);
+    border-bottom: #83afb4 30px solid;
 }
 
-.some_container > .some_ikon {
-    margin-left: 10px;
-    margin-bottom: 30px;
-}
 .some_ikon {
-  width: 30px;
-  height: 30px;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
 }
 
+@media screen and (max-width: 650px) {
+    .footer_billede {
+      
+    }
+}
+    
