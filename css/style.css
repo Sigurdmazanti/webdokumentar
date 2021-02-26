@@ -424,6 +424,132 @@ input[type="image"]
 
 /*#endregion */
 
+
+
+
+
+
+
+
+.main_heading {
+    margin: 70px auto;
+}
+
+img {
+    width: 100%;
+}
+
+.news-article {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 .75rem;
+    margin: .5rem;
+}
+
+.news-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.blog-post {
+    width: 100%;
+    max-width: 49rem;
+    padding: 2.5rem;
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    transition: .2s;
+    margin-bottom: 40px;
+}
+
+.blog-post:hover {
+    transform: translateY(-3%);
+    box-shadow: 0 2rem 4rem rgb(82, 82, 82);
+}
+
+.blog-post_img {
+    min-width: 17.5rem;
+    max-width: 17.5rem;
+    height: 15rem;
+    transform: translateX(-4rem);
+    position: relative;
+}
+
+.blog-post_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 25px;
+}
+
+.blog-post_img::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: .25rem .25rem 1.5rem .5px rgba(0, 0, 0, .05);
+    border-radius: .4rem;
+}
+
+.blog-post_date span {
+    display: block;
+    color: #83afb4;
+    font-size: .8rem;
+    font-weight: 600;
+    margin: .25rem 0;
+}
+
+.blog-post_title {
+    font-size: 1.25rem;
+    margin: .75rem 0 1rem;
+    text-transform: uppercase;
+    color: #83afb4;
+}
+
+.blog-post_text {
+    margin-bottom: 1.5rem;
+    font-size: .7rem;
+    color: #000;
+}
+
+.blog-post_cta {
+    display: inline-block;
+    padding: .5rem 1.5rem;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    font-size: .6rem;
+    color: #fff;
+    background-color: #83afb4;
+    border-radius: 25px;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.blog-post_cta:hover {
+    padding: .5rem 2.5rem;
+    transition: .6s;
+}
+
+
+
+
+
+
+
+
 <<<<<<< Updated upstream
 /* VECTORS */
 .vector_container {
