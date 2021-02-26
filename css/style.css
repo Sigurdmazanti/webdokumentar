@@ -193,6 +193,7 @@ img {
 
 /* tekst + billeder sektion ---------------------- */
 .sektionstekst-og-billeder {
+	background-color: #83AFB4;
 	width: 100%;
 	display: flex;
     justify-content: center;
@@ -201,17 +202,53 @@ img {
 
 .sektionstekst-billeder_container {
 	width: 50%;
+}
+
+.sektionstekst_box {
+	background-color: white;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.sektionsbilleder_box {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
 	padding: 10px;
 }
 
 .sektionsbilleder_box img {
 	margin: 5px;
 	width: 35%;
+	height: 35%;
+	opacity: 0.8;
 }
 
 .sektionsbilleder_box img:hover {
-	width: 45%;
+	opacity: 1;
 }
+
+@media (max-width: 700px){
+	.sektionstekst-og-billeder {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.sektionstekst-billeder_container {
+		width: 100%;
+	}
+	
+	.sektionstekst_box {
+		margin-top: 20px;
+	}
+	
+	.sektionsbilleder_box img {
+		width: 40%;
+	}
+}
+
+
 /* VECTORS */
 .vector_container {
   display: grid;
@@ -372,61 +409,74 @@ color: white;
         width: 100px;
     }
 }
-/* Profiler ------------------------------------------- */
+/* slut på Profiler ------------------------------------------- */
 
-/*#region Videoplayer*/
-#wrapper
-{
- text-align:center;
- margin:0 auto;
- padding:0px;
- width:995px;
+/* Videoplayer med tekst til højre -------- */
+.video-og-tekst {
+	background-color: #83AFB4;
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
-#player_wrapper
-{
- position:relative;
- width:800px;
- margin-left:100px;
+.video1_wrapper {
+	width: 50%;
+}
+.videotekst {
+	color: white;
+	width: 50%;
+	margin: auto;
+	padding: 20px;
+	
 }
 #video_player
 {
- width:800px;
+	width: 95%;
+	display: block;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
 }
 #player_controls
 {
- top:98%;
- position:absolute;
+	width: 95%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
  background-color:black;
- width:100%;
  padding:5px;
  box-sizing:border-box;
 }
 input[type="image"]
 {
  float:left;
- height:40px;
- margin-left:2px;
- margin-right:5px;
- margin-top:2px;
+ width: 8%;
   
 }
 #vol_img
 {
- margin-left:280px;
- width:30px;
- 
- margin-top: 10px;
+ width: 7%;
 }
 
 .slider{
-  width: 300px;
+	width: 50%;
 }
 
-/*#endregion */
-
-
-
-
+@media (max-width: 700px) {
+	.video-og-tekst {
+		flex-direction: column;
+	}
+	.video1_wrapper {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.videotekst {
+		width: 100%;
+		padding-top: 0px;
+}
+}
+/* slut på videosektion -------- */
 
 
 
@@ -544,13 +594,6 @@ img {
 }
 
 
-
-
-
-
-
-
-<<<<<<< Updated upstream
 /* VECTORS */
 .vector_container {
     display: grid;
