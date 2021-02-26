@@ -292,24 +292,21 @@ img {
 }
 
 .vector_card {
-    background-color: white;
     height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.7);
-    color: white;
 }
 
-.vector_icon {
-    height: 70px;
-    background-color: #F3F4F7;
-    border-radius: 60px;
+.vector_ikon {
+    height: 75px;
+    width: 75px;
     padding: 5px;
     margin-top: 10px;
+    background-color: white;
 }
-
 .vector_card_h3 {
     margin-top: 9px;
     font-size: 25px;
@@ -338,6 +335,7 @@ img {
 
 .brugerprofiler {
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -384,18 +382,16 @@ img {
     align-items: center;
     border-radius: 10px;
     width: 300px;
-    padding: 0px 25px;
+    padding: 20px 25px;
     height: 400px;
     box-sizing: border-box;
-    margin: 0 px 30px;
+    margin: 30px;
     position: relative;
 }
 
 .brugerprofil_bruger img {
-    height: 100%;
+    height: 100px;
     border-radius: 60px;
-    max-width: 100px;
-    max-height: 100px;
 }
 
 .brugerprofil_bruger h3 {
@@ -442,30 +438,6 @@ img {
         width: 100px;
     }
 }
-
-
-
-
-@media(max-width:1050px) {
-    .brugerprofil_bruger_container {
-        flex-wrap: wrap;
-
-    }
-
-    .brugerprofiler {
-        height: auto;
-    }
-
-    .brugerprofil_titel {
-        margin: 15px;
-    }
-
-    .brugerprofil_bruger {
-        flex-grow: 1;
-    }
-}
-
-
 
 /* slut på Profiler ------------------------------------------- */
 
@@ -565,7 +537,6 @@ img {
 .news-wrapper {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px 0;
 }
 
 .blog-post {
@@ -578,7 +549,6 @@ img {
     align-items: center;
     border-radius: 25px;
     transition: .2s;
-    margin-bottom: 40px;
 }
 
 .blog-post:hover {
@@ -657,55 +627,17 @@ img {
 }
 
 
-
-
-@media screen and (max-width: 1068px) {
-    .blog-post {
-        max-width: 40rem;
-    }
-
-    .blog-post_img {
-        min-width: 15rem;
-        max-width: 15rem;
-    }
-}
-
-@media screen and (max-width: 868px) {
-    .blog-post {
-        max-width: 35rem;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .blog-post {
-        padding: 1.25rem;
-        flex-direction: column;
-    }
-
-    .blog-post_img {
-        min-width: 100%;
-        max-width: 100%;
-        transform: translate(0, -0rem);
-    }
-}
-
-
-
-
-
 /* VECTORS */
 .vector_container {
     display: grid;
-    grid-gap: 100px;
     grid-template-columns: 300px 300px 300px;
     justify-content: center;
     align-items: center;
-    margin: 50px;
 }
 
 .vector_card {
     background-color: white;
-    height: 500px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -718,8 +650,8 @@ img {
     height: 70px;
     background-color: #F3F4F7;
     border-radius: 60px;
+    width: 70px;
     padding: 5px;
-    margin-top: 10px;
 }
 
 .vector_card_h3 {
@@ -751,14 +683,6 @@ footer {
     text-align: center;
 }
 
-/*
-.footer_billede {
-    background-image: url(../img/GROW%20banner.PNG);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-*/
 .footer_tekst_container {
     display: flex;
     justify-content: center;
@@ -819,10 +743,3 @@ footer {
     height: 30px;
     margin-left: 10px;
 }
-
-@media screen and (max-width: 650px) {
-    .footer_billede {
-      
-    }
-}
-    
