@@ -729,11 +729,7 @@ img {
         display: flex;
         flex-direction: column;
     }
-    .vector_p {
-        text-align: center;
-        margin-left: 300px;
-        margin-right: 300px;
-    }
+    
 }
 
 /* FOOTER */
