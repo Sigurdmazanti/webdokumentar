@@ -467,11 +467,20 @@ img {
 /* slut på Profiler ------------------------------------------- */
 
 /* Videoplayer med tekst til højre -------- */
+.TEST {
+    display: block;
+    margin-bottom: -1px;
+}
+
+.TEST1 {
+    display: block;
+    margin-top: -1px;
+    transform: rotate(180deg);
+}
+
 .video-og-tekst {
     background-color: #83AFB4;
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .video1_wrapper {
