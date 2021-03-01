@@ -346,6 +346,7 @@ img {
     justify-content: space-evenly;
     align-items: center;
     font-family: 'inter', sans-serif;
+    margin-top: 
 }
 
 .brugerprofiler a {
@@ -358,7 +359,7 @@ img {
 }
 
 .brugerprofil_titel h2 {
-    color: #71d3f1;
+    color: #83AFB4;
     font-size: 32px;
     font-weight: 400;
     letter-spacing: 1px;
@@ -378,6 +379,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px 0px;
 }
 
 .brugerprofil_bruger {
@@ -421,7 +423,7 @@ img {
     left: 50%;
     top: 0%;
     transform: translateX(-50%);
-    background-color: #71d3d1;
+    background-color: #83AFB4;
     border-radius: 0px 0px 10px 10px;
     display: none;
     animation: bar 0.5s;
@@ -546,14 +548,6 @@ input[type="image"] {
 }
 
 /* slut på videosektion -------- */
-
-
-
-
-.main_heading {
-    margin: 70px auto;
-}
-
 img {
     width: 100%;
 }
@@ -571,7 +565,8 @@ img {
 .news-wrapper {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
+    margin-top: 20px;
 }
 
 .blog-post {
