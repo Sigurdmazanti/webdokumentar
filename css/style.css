@@ -341,7 +341,6 @@ img {
 
 .brugerprofiler {
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -688,7 +687,7 @@ img {
 /* VECTORS */
 .vector_container {
     display: grid;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 350px 350px 350px;
     justify-content: center;
     align-items: center;
 }
@@ -696,8 +695,6 @@ img {
 .vector_card {
     background-color: white;
     height: 200px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.7);
@@ -709,7 +706,6 @@ img {
     background-color: #F3F4F7;
     border-radius: 60px;
     width: 70px;
-    padding: 5px;
 }
 
 .vector_card_h3 {
@@ -724,15 +720,19 @@ img {
     margin-top: 20px;
     font-family: Lucida-Regular;
     font-size: 13px;
-    text-align: left;
-    margin-left: 20px;
-    margin-right: 20px;
+    text-align: center;
+    line-height: 20px;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1150px) {
     .vector_container {
         display: flex;
         flex-direction: column;
+    }
+    .vector_p {
+        text-align: center;
+        margin-left: 300px;
+        margin-right: 300px;
     }
 }
 
