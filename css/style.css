@@ -448,6 +448,10 @@ img {
 }
 
 @media(max-width: 1050px) {
+    .brugerprofil_bruger_container {
+        flex-wrap: wrap;
+    }
+    
     .brugerprofiler {
         height: auto;
     }
