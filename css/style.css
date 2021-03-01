@@ -312,6 +312,12 @@ img {
     }
 }
 
+/* Beskrivelse ---------------------- */
+.beskrivelse_tekst {
+    margin: 0% 10%;
+    padding-top: 20px;
+    text-align: ;
+}
 
 /* VECTORS */
 .vector_container {
