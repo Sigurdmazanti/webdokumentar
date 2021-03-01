@@ -66,7 +66,7 @@ img {
     width: 200px;
     margin-top: 10px;
     font-family: Lucida-Demibold;
-    
+
 }
 
 .default-button:hover {
@@ -78,6 +78,7 @@ img {
     margin: 0px;
     display: block;
 }
+
 .omvendt {
     transform: rotate(180deg);
 }
@@ -88,9 +89,10 @@ img {
     margin: 0px;
     display: block;
     position: absolute;
-        top: 0px;
+    top: 0px;
     right: 0px;
 }
+
 /* FONTS ------------------------------------------- */
 @font-face {
     font-family: 'Lucida-Regular';
@@ -207,7 +209,7 @@ img {
     /* ADD THIS LINE */
 
     /* Background styles */
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/img/pexels-marc-mueller-380769.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/pexels-marc-mueller-380769.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -218,6 +220,7 @@ img {
     height: 50%;
     width: 50%;
 }
+
 /*
 .hero h1 {
     font-size: 5em;
@@ -238,28 +241,48 @@ img {
 }
 
 .sektionstekst-billeder_container {
-    width: 50%;
+    width: 500px;
+    height: 10%;
 }
 
 .sektionstekst_box {
-    background-color: white;
+    background-color: #83AFB4;
+    color: white;
     margin-left: 20px;
     margin-right: 20px;
+    text-align: center;
+}
+
+#grow_titlen {
+    text-align: center;
+    font-size: 44px;
+    font-family: Lucida-Demibold;
+    margin-bottom: 10px;
+}
+
+.sektionstekst_tekst {
+    text-align: left;
+    font-family: Lucida-Regular;
 }
 
 .sektionsbilleder_box {
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-end;
     padding: 10px;
+    margin-top: 5px;
 }
 
 .sektionsbilleder_box img {
+    display: flex;
+    flex-direction: column;
     margin: 5px;
-    width: 35%;
-    height: 35%;
+    max-width: 33%;
+    max-height: 30%;
     opacity: 0.8;
+        box-shadow: 0 1rem 1rem rgb(82, 82, 82);
+    border-radius: 20px;
 }
 
 .sektionsbilleder_box img:hover {
@@ -282,6 +305,10 @@ img {
 
     .sektionsbilleder_box img {
         width: 40%;
+    }
+
+    .sektionsbilleder_box {
+        justify-content: center;
     }
 }
 
@@ -346,7 +373,7 @@ img {
     justify-content: space-evenly;
     align-items: center;
     font-family: 'inter', sans-serif;
-    margin-top: 
+    margin-top:
 }
 
 .brugerprofiler a {
@@ -452,7 +479,7 @@ img {
     .brugerprofil_bruger_container {
         flex-wrap: wrap;
     }
-    
+
     .brugerprofiler {
         height: auto;
     }
@@ -736,7 +763,7 @@ img {
         display: flex;
         flex-direction: column;
     }
-    
+
 }
 
 /* FOOTER */
@@ -816,6 +843,7 @@ footer {
     font-size: 15px;
     margin-top: 40px;
 }
+
 .some_ikon {
     width: 30px;
     height: 30px;
