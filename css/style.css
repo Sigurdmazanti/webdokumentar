@@ -53,41 +53,44 @@ img {
 
 /* Global ---------------------------------------- */
 .default-button {
-    background-color: #71d3f1;
-    border: none;
+    background-color: #83afb4;
     border-radius: 100px;
+    border-style: none;
     cursor: pointer;
     font-family: 'inter';
     color: white;
     text-transform: uppercase;
     transition-duration: 0.5s;
-    height: 40px;
-    width: 180px;
+    font-size: 20px;
+    height: 50px;
+    width: 200px;
     margin-top: 10px;
+    font-family: Lucida-Demibold;
+    
 }
 
 .default-button:hover {
-    width: 200px;
+    background-color: #588c92;
 }
 
-.default-button-inverted {
-    background-color: #222222;
-    border: 2px solid #71f3d1;
-    border-radius: 100px;
-    cursor: pointer;
-    font-family: 'inter';
-    color: white;
-    text-transform: uppercase;
-    transition-duration: 0.5s;
-    height: 40px;
-    width: 180px;
-    margin-top: 10px;
+.grow_deler {
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
+.omvendt {
+    transform: rotate(180deg);
 }
 
-.default-button-inverted:hover {
-    width: 200px;
+.topbanner {
+    transform: rotate(180deg);
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    position: absolute;
+        top: 0px;
+    right: 0px;
 }
-
 /* FONTS ------------------------------------------- */
 @font-face {
     font-family: 'Lucida-Regular';
@@ -190,7 +193,7 @@ img {
 .hero {
     /* Sizing */
     width: 100vw;
-    height: 100vh;
+    height: 108vh;
 
     /* Flexbox stuff */
     display: flex;
@@ -204,25 +207,27 @@ img {
     /* ADD THIS LINE */
 
     /* Background styles */
-    background-image: url('/img/pexels-marc-mueller-380769.jpg');
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/img/pexels-marc-mueller-380769.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
+.grow_logo {
+    height: 50%;
+    width: 50%;
+}
+/*
 .hero h1 {
-    /* Text styles */
     font-size: 5em;
-
-    /* Margins */
     margin-top: 0;
     margin-bottom: 0.5em;
 
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 3px;
 }
-
+*/
 /* tekst + billeder sektion ---------------------- */
 .sektionstekst-og-billeder {
     background-color: #83AFB4;
@@ -307,6 +312,7 @@ img {
     margin-top: 10px;
     background-color: white;
 }
+
 .vector_card_h3 {
     margin-top: 9px;
     font-size: 25px;
@@ -539,6 +545,11 @@ img {
     flex-wrap: wrap;
 }
 
+@media (max-width: 920px) {
+.news-wrapper {
+    flex-direction: row;
+    }
+}
 .blog-post {
     width: 100%;
     max-width: 49rem;
@@ -681,16 +692,18 @@ img {
 /* FOOTER */
 footer {
     text-align: center;
+    position: relative;
 }
 
 .footer_tekst_container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
 }
 
 .h3_footer {
+    max-width: 100%;
     font-family: Lucida-Demibold;
     font-size: 30px;
     text-transform: uppercase;
@@ -704,7 +717,6 @@ footer {
     margin-top: 15px;
     font-family: Lucida-Regular;
     font-size: 13px;
-    max-width: 50%;
 }
 
 .footer_billede {
@@ -723,23 +735,45 @@ footer {
     color: white;
 }
 
+.footer_wrapper {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    z-index: 1000;
+    height: 100%;
+}
 
 .growban {
     border-bottom: #83afb4 30px solid;
 }
+
 .some_container {
     display: inline-flex;
     justify-content: center;
-      position: absolute;
-  top: 95%;
-  left: 50%;
+    position: absolute;
+    top: 95%;
+    left: 50%;
     width: 100%;
-  transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     border-bottom: #83afb4 30px solid;
 }
 
+.bund {
+    height: 40px;
+    width: 120px;
+    font-size: 15px;
+    margin-top: 40px;
+}
 .some_ikon {
     width: 30px;
     height: 30px;
     margin-left: 10px;
+}
+
+.some_ikon:hover {
+    opacity: 0.5;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
