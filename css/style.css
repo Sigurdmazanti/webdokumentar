@@ -364,6 +364,10 @@ img {
     .sektionsbilleder_box {
         justify-content: center;
     }
+    
+    #cards_overskrift {
+    margin-top: 0px;
+}
 }
 
 /* Beskrivelse ---------------------- */
@@ -486,6 +490,10 @@ img {
     text-transform: uppercase;
 }
 
+#brugerprofil_header_p {
+    margin-bottom: 20px;
+}
+
 
 .brugerprofil_bruger_container {
     width: 100%;
@@ -533,6 +541,7 @@ img {
     font-family: Lucida-Regular;
     margin-top: 5px;
     line-height: 20px;
+    max-height: 140px;
 }
 
 .brugerprofil_bruger_bar {
@@ -667,6 +676,10 @@ input[type="image"] {
 }
 
 /* slut på videosektion -------- */
+#cards_overskrift {
+    margin-top: 40px;
+}
+
 img {
     width: 100%;
 }
