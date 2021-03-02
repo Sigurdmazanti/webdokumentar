@@ -81,6 +81,7 @@ img {
 
 .omvendt {
     transform: rotate(180deg);
+    z-index: -999;
 }
 
 .topbanner {
@@ -240,6 +241,58 @@ img {
     align-items: center;
 }
 
+.tooltip {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+}
+
+.tooltip .left {
+    right: 100%;
+    margin-right: 20px;
+    transform: translate(0, -70%);
+    padding: 10px 20px;
+    color: #FFFFFF;
+    background-color: #83AFB4;
+    font-weight: normal;
+    font-size: 13px;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 99999999;
+    width: 100px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+
+.tooltip:hover .left {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip .left i {
+    position: absolute;
+    top: 70%;
+    left: 100%;
+    margin-top: -12px;
+    width: 12px;
+    height: 24px;
+    overflow: hidden;
+}
+
+.tooltip .left i::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    background-color: #83AFB4;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
 .sektionstekst-billeder_container {
     width: 500px;
     height: 10%;
@@ -281,8 +334,9 @@ img {
     max-width: 33%;
     max-height: 30%;
     opacity: 0.8;
-        box-shadow: 0 1rem 1rem rgb(82, 82, 82);
+    box-shadow: 0 1rem 1rem rgb(82, 82, 82);
     border-radius: 20px;
+    z-index: 1000;
 }
 
 .sektionsbilleder_box img:hover {
@@ -313,10 +367,34 @@ img {
 }
 
 /* Beskrivelse ---------------------- */
+.growtekst {
+    margin-top: 0px;
+}
+
+.grow_intro{
+    text-align: center;
+}
+
+#grow_introtitel {
+    font-size: 25px;
+    font-family: Lucida-Demibold;
+    color: #83AFB4;
+    text-transform: uppercase;
+}
 .beskrivelse_tekst {
     margin: 0% 10%;
     padding-top: 20px;
-    text-align: ;
+    margin-bottom: 30px;
+    font-family: Lucida-Regular;
+}
+
+.grow_udforsk {
+    text-align: center;
+    font-family: Lucida-Demibold;
+    margin-top: 10px;
+    font-size: 25px;
+    color: #83AFB4;
+    text-transform: uppercase;
 }
 
 /* VECTORS */
@@ -379,7 +457,6 @@ img {
     justify-content: space-evenly;
     align-items: center;
     font-family: 'inter', sans-serif;
-    margin-top:
 }
 
 .brugerprofiler a {
@@ -389,6 +466,15 @@ img {
 
 .brugerprofil_titel {
     text-align: center;
+    font-family: Lucida-Demibold;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.brugerprofil_virksomhed {
+    font-size: 20px;
+    font-family: Lucida-Regular;
+    color: black;
 }
 
 .brugerprofil_titel h2 {
@@ -400,12 +486,6 @@ img {
     text-transform: uppercase;
 }
 
-.brugerprofil_titel p {
-    color: rgba(87, 105, 117, 0.60);
-    font-size: 1rem;
-    margin: 5px;
-    text-align: center;
-}
 
 .brugerprofil_bruger_container {
     width: 100%;
@@ -434,19 +514,25 @@ img {
     border-radius: 60px;
     max-width: 100px;
     max-height: 100px;
+    -webkit-box-shadow: 0px 7px 21px -4px rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: 0px 7px 21px -4px rgba(0, 0, 0, 0.41);
+    box-shadow: 0px 7px 21px -4px rgba(0, 0, 0, 0.41);
 }
 
 .brugerprofil_bruger h3 {
     color: #000000;
     letter-spacing: 1px;
-    margin-bottom: 8px;
+    margin-bottom: 3px;
     text-align: center;
 
 }
 
-.brugerprofil_bruger p {
+.brugerprofil_p {
     color: rgba(87, 105, 117, 0.90);
-    text-align: center;
+    text-align: left;
+    font-family: Lucida-Regular;
+    margin-top: 5px;
+    line-height: 20px;
 }
 
 .brugerprofil_bruger_bar {
