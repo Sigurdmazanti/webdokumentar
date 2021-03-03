@@ -2,6 +2,7 @@
 html {
     box-sizing: border-box;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -659,12 +660,20 @@ img {
     width: 50%;
 }
 
+.video_overskrift {
+    color: white;
+    font-family: Lucida-Demibold;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
 .videotekst {
     color: white;
     width: 50%;
     margin: auto;
     padding: 20px;
-
+    font-family: Lucida-Regular;
 }
 
 #video_player {
@@ -690,7 +699,6 @@ input[type="image"] {
     float: left;
     width: 35px;
     margin-top: 8px;
-
 }
 
 #volume {
@@ -970,11 +978,17 @@ footer {
     margin-top: 15px;
     font-family: Lucida-Regular;
     font-size: 13px;
+    margin-bottom: 15px;
 }
 
+.footer_venter {
+    font-family: Lucida-Regular;
+    font-size: 13px;
+}
 .footer_billede {
     position: absolute;
     text-align: center;
+    transform: translate(0%, -30%);
 }
 
 .footer_button {
@@ -989,12 +1003,10 @@ footer {
 }
 
 .footer_wrapper {
-    position: absolute;
     display: block;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -10%);
-    z-index: 1000;
+    margin-left: 10%;
+    margin-right: 10%;
     height: 100%;
 }
 
