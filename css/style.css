@@ -666,7 +666,7 @@ img {
 }
 
 #video_player {
-    width: 95%;
+    width: 80%;
     display: block;
     margin-top: 20px;
     margin-right: auto;
@@ -674,28 +674,40 @@ img {
 }
 
 #player_controls {
-    width: 95%;
+    width: 80%;
+    height: 50px;
     display: block;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 20px;
     background-color: black;
-    padding: 5px;
     box-sizing: border-box;
 }
 
 input[type="image"] {
     float: left;
-    width: 8%;
+    width: 35px;
+    margin-top: 8px;
 
+}
+
+#volume {
+    width: 50%;
+    float: right;
 }
 
 #vol_img {
     width: 7%;
+    margin-bottom: 15px;
+    float: right;
+    margin-top: 17px;
 }
 
 .slider {
-    width: 50%;
+    width: 90px;
+    padding: 20px 0px;
+    float: right;
+
 }
 
 @media (max-width: 700px) {

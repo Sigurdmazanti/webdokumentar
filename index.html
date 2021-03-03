@@ -93,8 +93,10 @@
                     <input type="image" src="img/play_icon.png" onclick="play_vid()" id="play_button">
                     <input type="image" src="img/pause_icon.png" onclick="pause_vid()" id="pause_button">
                     <input type="image" src="img/stop_icon.png" onclick="stop_vid()" id="stop_button">
-                    <img src="img/sound_icon.png" id="vol_img">
-                    <input class="slider" type="range" id="change_vol" onchange="change_vol()" step="0.05" min="0" max="1" value="1">
+                    <div id="volume">
+                        <img src="img/sound_icon.png" id="vol_img">
+                        <input class="slider" type="range" id="change_vol" onchange="change_vol()" step="0.05" min="0" max="1" value="1">
+                    </div>
                 </div>
             </div>
             <div class="videotekst">
@@ -271,4 +273,6 @@
         </div>
     </footer>
     <script src="/js/js.js"></script>
-</body></html>
+</body>
+
+</html>
