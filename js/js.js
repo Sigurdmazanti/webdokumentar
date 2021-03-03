@@ -30,3 +30,46 @@ function change_vol() {
     player.volume = document.getElementById("change_vol").value;
 }
         //#endregion
+
+// Uge-array
+let enUge = [
+    "Søndag",
+    "Mandag",
+    "Tirsdag",
+    "Onsdag",
+    "Torsdag",
+    "Fredag",
+    "Lørdag"
+]
+
+let maaneder = [
+    "Januar",
+    "Februar",
+    "Marts",
+    "April",
+    "Maj",
+    "Juni",
+    "Juli",
+    "August",
+    "September",
+    "Oktober",
+    "November",
+    "December"
+]
+
+
+let datoKlokkeslaet = new Date()
+
+let klokkeslaet = enUge[datoKlokkeslaet.getDay()]
+    + " "
+    + datoKlokkeslaet.getDate()
+    + "."
+    + " "
+    + maaneder[datoKlokkeslaet.getMonth()]
+    + " "
+    + datoKlokkeslaet.getHours()
+    + ":";
+
+let alleData = datoKlokkeslaet.getMinutes() < 10 ? '0' : '' + datoKlokkeslaet.getMinutes();
+
+arrays.innerHTML = klokkeslaet + alleData
