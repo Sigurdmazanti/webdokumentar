@@ -1,4 +1,4 @@
-/* Open when someone clicks on the span element */
+/* Navigationsbar */
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
 }
@@ -8,7 +8,7 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
 
-//#region Video
+/* Video */
 document.addEventListener("DOMContentLoaded", function () { startplayer(); }, false);
 var player;
 
@@ -29,7 +29,6 @@ function stop_vid() {
 function change_vol() {
     player.volume = document.getElementById("change_vol").value;
 }
-        //#endregion
 
 // Uge-array
 let enUge = [
@@ -58,7 +57,10 @@ let maaneder = [
 ]
 
 
+
 let datoKlokkeslaet = new Date()
+currentMinutes = datoKlokkeslaet.getMinutes();
+currentMinutes = ("0" + currentMinutes).slice(-2);
 
 let klokkeslaet = enUge[datoKlokkeslaet.getDay()]
     + " "
@@ -68,8 +70,7 @@ let klokkeslaet = enUge[datoKlokkeslaet.getDay()]
     + maaneder[datoKlokkeslaet.getMonth()]
     + " "
     + datoKlokkeslaet.getHours()
-    + ":";
+    + ":"
+    + currentMinutes;
 
-let alleData = datoKlokkeslaet.getMinutes() < 10 ? '0' : '' + datoKlokkeslaet.getMinutes();
-
-arrays.innerHTML = klokkeslaet + alleData
+arrays.innerHTML = klokkeslaet
