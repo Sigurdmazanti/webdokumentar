@@ -222,6 +222,7 @@ img {
     min-height: 100%;
     background-size: cover;
     display: block;
+    overflow: hidden;
 }
 
 .hero_video_container {
@@ -233,6 +234,7 @@ img {
     top: 0;
     right: 0;
     z-index: -999;
+    overflow: hidden;
 }
 
 .grow_logo {
@@ -472,7 +474,6 @@ img {
 }
 
 /* Profiler ------------------------------------------- */
-
 .brugerprofiler {
     width: 100%;
     display: flex;
@@ -534,9 +535,10 @@ img {
 
 .brugerprofil_bruger img {
     height: 100px;
+    width: 100px;
     border-radius: 800px;
-    max-width: 100px;
-    max-height: 100px;
+    min-width: 100px;
+    min-height: 100px;
     -webkit-box-shadow: 0px 7px 21px -4px rgba(0, 0, 0, 0.41);
     -moz-box-shadow: 0px 7px 21px -4px rgba(0, 0, 0, 0.41);
     box-shadow: 0px 7px 21px -4px rgba(0, 0, 0, 0.41);
@@ -547,7 +549,6 @@ img {
     letter-spacing: 1px;
     margin-bottom: 3px;
     text-align: center;
-
 }
 
 .brugerprofil_p {
@@ -555,6 +556,7 @@ img {
     text-align: left;
     font-family: Lucida-Regular;
     margin-top: 5px;
+    margin-bottom: 3px;
     line-height: 20px;
     min-height: 200px;
 }
