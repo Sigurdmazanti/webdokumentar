@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="da">
+
+<!-- Head & meta tags -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +12,11 @@
 </head>
 
 <body>
-    <!-- The overlay -->
+    <!-- Navigationsbar + array -->
     <nav id="myNav" class="overlay">
-
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
         <div class="overlay-content">
-            <div id="arrays"></div> <!-- Uge-array -->
+            <div id="arrays"></div>
             <a href="#grow_titlen">Velkommen</a>
             <a href="#video_player">Mød Nanna fra Danish Balance</a>
             <a href="#brugerprofil_link">Brugerprofiler</a>
@@ -24,6 +25,7 @@
         </div>
     </nav>
 
+    <!-- Hero -->
     <section class="hero">
         <div class="hero_video_container">
             <video class="hero_video" playsinline autoplay muted loop id="bgvideo">
@@ -44,9 +46,8 @@
         </div>
     </section>
 
-    <!-- tekst til venstre - billeder til højre -->
+    <!-- Velkomsttekst -->
     <section class="sektionstekst-og-billeder">
-
         <div class="sektionstekst-billeder_container">
             <div class="sektionstekst_box">
                 <h2 id="grow_titlen">Velkommen i GROW</h2>
@@ -54,6 +55,7 @@
             </div>
         </div>
 
+        <!-- Flexbox af billeder -->
         <div class="sektionstekst-billeder_container">
             <div class="sektionsbilleder_box">
                 <img alt="billede af GROWs lokale" src="img/GROW_lokale.jpg">
@@ -62,10 +64,11 @@
                 <img alt="billede af GROWs bygning" src="img/GROW_klokke.jpg">
             </div>
         </div>
-
     </section>
     <div class="deler_udforsk">
     </div>
+
+    <!-- Intro/motiv tekst -->
     <main>
         <section class="grow_intro">
             <div class="brugerprofil_titel growtekst">
@@ -81,7 +84,7 @@
         </section>
 
 
-        <!-- Video player -->
+        <!-- Video/interview af Nanna -->
         <img src="img/GROW_blade.png" class="TEST" alt="Grow banner med blade">
         <section class="video-og-tekst">
             <div class="video1_wrapper">
@@ -98,13 +101,14 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Video/interview brødtekst -->
             <div class="videotekst">
                 <h2 class="video_overskrift">VIRKSOMHED GENNEM GROW</h2>
                 <p>Hør 27-årige Nanna Enevoldsen CEO ved Danish Balance & Acrogym fortælle hvordan hun, gennem sit studie, fik kendskab til GROW og brugte det til at hun og en kollega kunne etablere virksomheden “Danish Balance & Acrogym”. Da Nanna var studerende på Erhvervsakademi Aarhus havde hun en idé om at hun gerne ville ind og sidde hos GROW og starte sit eget - men for at kunne dette, skulle hun bruge en idé og noget at arbejde videre på. På en udenlandsmesse møder Nanna tilfældigt Pernille fra Skanderborg, som ønsker at lære folk at stå på hænder. Nanna og hun slog sig derfor sammen og startede “Acrogym”, med de produkter Pernille allerede havde.</p>
             </div>
         </section>
         <img src="img/GROW_blade.png" class="TEST1" alt="Grow banner med blade">
-        <!-- Video player Slut -->
 
         <!-- Brugerprofiler -->
         <section class="brugerprofiler">
@@ -113,6 +117,7 @@
                 <p>Her er 3 af GROWs succeshistorier fra tidligere medlemmer.</p>
             </div>
 
+            <!-- Brugerprofil Simon -->
             <div class="brugerprofil_bruger_container">
                 <div class="brugerprofil_bruger">
                     <div class="brugerprofil_bruger_bar"></div>
@@ -123,6 +128,7 @@
                     <a href="https://grow.eaaa.dk/mod-os-i-grow/jobla/" class="brugerprofil_knap">Læs Mere</a>
                 </div>
 
+                <!-- Brugerprofil Malthe & Peter -->
                 <div class="brugerprofil_bruger">
                     <div class="brugerprofil_bruger_bar"></div>
                     <img alt="Billede af brugerprofil Malthe & Peter" src="img/malthepeter.jpg">
@@ -133,7 +139,7 @@
                     <a href="https://grow.eaaa.dk/mod-os-i-grow/intrace/" class="brugerprofil_knap">Læs Mere</a>
                 </div>
 
-
+                <!-- Brugerprofil Nanna -->
                 <div class="brugerprofil_bruger">
                     <div class="brugerprofil_bruger_bar"></div>
                     <img alt="Billede af brugerprofil Nanna" src="img/Nanna4.jfif">
@@ -145,12 +151,14 @@
             </div>
         </section>
 
+        <!-- GROW infobokse -->
         <div class="topdeler">
         </div>
         <div class="brugerprofil_titel" id="grow_information">
             <h2 class="brugerprofil_overskrift">HVAD ER GROW?</h2>
         </div>
         <section class="news-wrapper">
+            <!-- Kontorpladser -->
             <article class="news-article">
                 <div class="blog-post">
                     <div class="blog-post_img">
@@ -169,6 +177,8 @@
                     </div>
                 </div>
             </article>
+
+            <!-- Sparring & vejledning -->
             <article class="news-article">
                 <div class="blog-post">
                     <div class="blog-post_img">
@@ -181,6 +191,8 @@
                     </div>
                 </div>
             </article>
+
+            <!-- Koordinatorer -->
             <article class="news-article">
                 <div class="blog-post">
                     <div class="blog-post_img">
@@ -194,13 +206,13 @@
                 </div>
             </article>
         </section>
-
-
-        <!--<img src="img/GROW_deleren.jpg" class="grow_deler">
-        <img src="img/GROW_deleren.jpg" class="grow_deler omvendt"> -->
         <div class="topdeler">
         </div>
+
+        <!-- Vectors -->
         <div class="vector_container">
+
+            <!-- Netværk -->
             <div class="vector_card">
                 <img src="img/groencrowd.png" class="vector_ikon" alt="Ikon af mennesker">
                 <h3 class="vector_card_h3">Dan et netværk</h3>
@@ -208,6 +220,8 @@
                     <p class="vector_p">Mød en masse ligesindede iværksættere! I GROWs kontorlokaler befinder sig en masse andre iværksættere, som er klar til at sparre og udvikle sig sammen med dig. Du kan også tilmelde dig GROWs facebookgruppe!</p>
                 </div>
             </div>
+
+            <!-- Idé -->
             <div class="vector_card">
                 <img src="img/groenide.png" class="vector_ikon" alt="Ikon af lyspære">
                 <h3 class="vector_card_h3">Gør din idé til virkelighed</h3>
@@ -215,6 +229,8 @@
                     <p class="vector_p">GROWs koordinatorer og vejlerede står klar til at hjælpe dig med at føre din idé ud i livet. De eneste krav er noget gåpåmod og dedikation!</p>
                 </div>
             </div>
+
+            <!-- Ekspandér -->
             <div class="vector_card">
                 <img src="img/groengraf.png" class="vector_ikon" alt="Ikon af graf">
                 <h3 class="vector_card_h3">Ekspandér din virksomhed</h3>
@@ -224,7 +240,8 @@
             </div>
         </div>
     </main>
-    <!-- Brugerprofiler slut -->
+
+    <!-- Footer -->
     <footer>
         <div class="footer_wrapper">
             <h3 class="h3_footer">Har du en iværksætter drøm?</h3>
@@ -236,6 +253,8 @@
                 <button type="submit" class="default-button bund">TILMELD</button>
             </form>
         </div>
+
+        <!-- Footer banner & SoMe -->
         <div class="footer_billede">
             <img src="img/grow_banner_test.png" class="growban" alt="Grow banner med blade og GROW tekst">
             <div class="some_container">
@@ -258,4 +277,5 @@
         </div>
     </footer>
     <script src="/js/js.js"></script>
-</body></html>
+</body>
+</html>
