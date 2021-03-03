@@ -215,7 +215,7 @@ img {
 }
 
 .hero_video {
-    position: fixed;
+    position: relative;
     width: auto;
     min-width: 100%;
     height: auto;
@@ -229,7 +229,6 @@ img {
     height: 100%;
     max-height: 1080px;
     max-width: 1920px;
-    overflow: hidden;
     position: absolute;
     top: 0;
     right: 0;
