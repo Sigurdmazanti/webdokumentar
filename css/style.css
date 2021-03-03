@@ -412,6 +412,7 @@ img {
     position: relative;
     margin-bottom: -1px;
 }
+
 .grow_intro {
     text-align: center;
 }
@@ -439,11 +440,11 @@ img {
     text-transform: uppercase;
 }
 
-/* VECTORS */
+/* Vector sektion ---------------------- */
 .vector_container {
     display: grid;
     grid-gap: 100px;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 350px 350px 350px;
     justify-content: center;
     align-items: center;
     margin: 50px;
@@ -462,7 +463,6 @@ img {
     width: 75px;
     padding: 5px;
     margin-top: 10px;
-    background-color: white;
 }
 
 .vector_card_h3 {
@@ -480,6 +480,7 @@ img {
     text-align: left;
     margin-left: 20px;
     margin-right: 20px;
+    line-height: 20px;
 }
 
 @media (max-width: 920px) {
@@ -488,7 +489,6 @@ img {
         flex-direction: column;
     }
 }
-
 /* Profiler ------------------------------------------- */
 .brugerprofiler {
     width: 100%;
