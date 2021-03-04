@@ -891,6 +891,7 @@ footer {
 
 .growban {
     border-bottom: #83afb4 30px solid;
+    z-index: -10;
 }
 
 .some_container {
